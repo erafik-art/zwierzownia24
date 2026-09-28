@@ -1,0 +1,28 @@
+KONTROLA PACZKI ZWIERZOWNIA24
+Wynik: PASS
+Strony HTML: 15
+Produkty w niezmienionym katalogu: 316
+
+Sprawdzono w przeglądarce Edge (tryb automatyczny):
+- unikalne title i meta description
+- pojedynczy H1 i brak duplikatów ID
+- istniejące lokalne pliki i kotwice
+- menu wszystkich stron na telefonie
+- brak poziomego przepełnienia przy 390, 768 i 1366 px
+- katalog: ładowanie, kategorie, wyszukiwanie i więcej produktów
+- 13 poradników w zbiorze
+- poprawne JSON-LD
+- działanie spisu treści i FAQ
+- brak błędów JavaScript
+
+Pliki porównane bajt po bajcie (SHA-256) z wejściową paczką:
+app.js
+products.json
+logo.png
+hero-pets.jpg
+passion-pets.jpg
+
+Oceniono zrzuty wyglądu strony poradników, artykułu na komputerze i telefonie oraz katalogu.
+Testy katalogu blokowały zewnętrzne obrazy, aby sprawdzić logikę niezależnie od dostępności serwisów obrazów. Oryginalnych adresów zdjęć nie zmieniono; ich dostępności nie potwierdzano.
+Nowe artykuły zawierają po około 560–610 słów wraz z tabelami, FAQ i sekcjami pomocniczymi.
+Nie wykonano wdrożenia na hosting.

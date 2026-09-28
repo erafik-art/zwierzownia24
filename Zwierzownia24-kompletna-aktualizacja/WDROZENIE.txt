@@ -1,0 +1,26 @@
+ZWIERZOWNIA24 — KOMPLETNA AKTUALIZACJA
+
+1. Zachowaj kopię dotychczasowej strony.
+2. Rozpakuj ZIP. Plik index.html znajduje się bezpośrednio w głównym katalogu paczki.
+3. Wgraj zawartość paczki do katalogu głównego strony. Przy Cloudflare Pages użyj dotychczasowego sposobu wdrażania projektu (repozytorium lub Direct Upload). Nie zmieniaj metody wdrożeń bez potrzeby.
+4. Sprawdź stronę główną, /poradniki.html, menu na telefonie i katalog.
+
+ZAWARTOŚĆ
+15 stron HTML: strona główna, zbiór poradników i 13 artykułów.
+style.css: dotychczasowe style z uzupełnieniem dotyczącym poradników i czytelności.
+guide-nav.js: niezależna obsługa menu poradników; nie uruchamia katalogu.
+app.js, products.json, logo.png, hero-pets.jpg i passion-pets.jpg: identyczne z otrzymanym ZIP-em.
+Istniejące trzy poradniki zachowano; zmieniono nawigację, dodano powiązane teksty i usunięto sugestię istniejących partnerstw.
+
+AFILIACJA — NA PÓŹNIEJ
+W nowych artykułach wyszukaj data-affiliate-slot. Każdy blok zawiera typ produktu i kryteria wyboru. Nie ma fikcyjnych ofert, ocen, cen ani linków partnerskich.
+Po uzyskaniu rzeczywistej oferty uzupełnij nazwę modelu, opis i aktualny link. Przy linku płatnym użyj rel="sponsored nofollow" i czytelnego oznaczenia „Link afiliacyjny”. Przed sekcją dodaj informację, że zakup może przynieść prowizję. Nie dodawaj przycisków prowadzących do # ani wymyślonych adresów. Nie twierdź, że produkt był testowany, jeśli nie był.
+
+SEO
+Każda strona ma własny title i meta description, język pl i jeden nagłówek H1. Nowe artykuły zawierają dane Article w JSON-LD.
+Nie wpisano fikcyjnej domeny do canonical ani sitemap. Po ustaleniu docelowego adresu można dodać canonical i mapę strony z pełnymi adresami HTTPS.
+
+UWAGI
+Nie dodano ani nie podmieniono obrazów. Zewnętrzne adresy zdjęć w products.json pozostają oryginalne; ich dostępność zależy od dostawców.
+Katalog ładuje products.json przez HTTP/HTTPS. Otwieranie index.html jako lokalnego pliku może blokować fetch — do podglądu użyj serwera lub hostingu.
+Źródła poradników są podlinkowane w artykułach. Brak twierdzeń o recenzji weterynaryjnej lub testach produktów.
