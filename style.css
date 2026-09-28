@@ -762,3 +762,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visi
 .skip-link{position:fixed;top:8px;left:8px;z-index:100;background:white;color:#194d28;padding:12px;transform:translateY(-150%)}.skip-link:focus{transform:none}
 @media(max-width:700px){.article-page{padding-top:28px}.guide-table th,.guide-table td{padding:9px;font-size:13px}.article-content section>p,.article-content li{font-size:15px}.guide-categories a{flex:1 1 auto;text-align:center}.article-header h1{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.guide-card,.card{transition:none}}
+/* POPRAWKA PRZYCISKÓW W PORADNIKACH */
+.article-products .affiliate-box a.btn,
+.article-products .affiliate-box a.btn:visited{
+  color:#fff !important;
+  background:#286837 !important;
+  text-decoration:none;
+}
+
+.article-products .affiliate-box a.btn:hover{
+  color:#fff !important;
+  background:#194d28 !important;
+}
