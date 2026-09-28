@@ -32,7 +32,16 @@ footer{background:linear-gradient(90deg,#0a3a1a,#155628);padding-top:48px}.foot{
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:540px){.footer-grid{grid-template-columns:1fr}}
 
-/* FIX: sekcja O NAS przy widoku 100% */
+/* FIX: sekcja O NAS przy widoku 100% *//* POPRAWKA – odstęp artykułu od nagłówka */
+.article-page{
+  padding-top:90px;
+}
+
+@media(max-width:700px){
+  .article-page{
+    padding-top:45px;
+  }
+}
 .about:before{
   display:none !important;
   content:none !important;
