@@ -387,3 +387,323 @@ footer{background:linear-gradient(90deg,#0a3a1a,#155628);padding-top:48px}.foot{
   }
 
 }
+/* =========================================
+   ZWIERZOWNIA24 – ARTYKUŁY / PORADNIKI
+   ========================================= */
+
+.article-page{
+  background:#f8faf5;
+  padding:35px 0 70px;
+}
+
+.article-wrap{
+  max-width:1100px!important;
+}
+
+.breadcrumbs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  font-size:13px;
+  color:#748074;
+  margin-bottom:32px;
+}
+
+.breadcrumbs a{
+  color:#35683a;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.article-header{
+  max-width:850px;
+  margin-bottom:38px;
+}
+
+.article-header h1{
+  font-size:48px;
+  line-height:1.08;
+  color:#173f24;
+  margin:10px 0 18px;
+}
+
+.article-lead{
+  font-size:20px;
+  line-height:1.65;
+  color:#4f5b50;
+  margin:0;
+}
+
+.article-layout{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  gap:50px;
+  align-items:start;
+}
+
+.article-toc{
+  position:sticky;
+  top:145px;
+  background:#fff;
+  border:1px solid #dfe7da;
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+  box-shadow:0 6px 20px rgba(35,69,37,.07);
+}
+
+.article-toc strong{
+  color:#194d28;
+  margin-bottom:4px;
+}
+
+.article-toc a{
+  color:#586458;
+  text-decoration:none;
+  font-size:13px;
+  line-height:1.35;
+}
+
+.article-toc a:hover{
+  color:#286837;
+}
+
+.article-content{
+  background:#fff;
+  border:1px solid #e3e8df;
+  border-radius:18px;
+  padding:42px 48px;
+  box-shadow:0 8px 26px rgba(35,69,37,.07);
+}
+
+.article-content>p{
+  font-size:17px;
+  line-height:1.75;
+  color:#465047;
+}
+
+.article-content h2{
+  color:#194d28;
+  font-size:28px;
+  line-height:1.2;
+  margin:46px 0 16px;
+  scroll-margin-top:145px;
+}
+
+.article-content h2:first-of-type{
+  margin-top:34px;
+}
+
+.article-tip{
+  background:#f4f8ef;
+  border-left:4px solid #4d7b3d;
+  border-radius:0 12px 12px 0;
+  padding:17px 20px;
+  margin:15px 0;
+}
+
+.article-tip strong{
+  color:#235b31;
+  font-size:16px;
+}
+
+.article-tip p{
+  color:#556056;
+  line-height:1.55;
+  margin:7px 0 0;
+}
+
+.food-compare{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:22px 0;
+}
+
+.food-compare>div{
+  background:#fff9e9;
+  border:1px solid #ebe1c6;
+  border-radius:14px;
+  padding:22px;
+}
+
+.food-compare strong{
+  color:#285f34;
+  font-size:17px;
+}
+
+.food-compare p{
+  color:#586158;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.article-products{
+  background:linear-gradient(120deg,#f3f8ed,#fff8e8);
+  border:1px solid #dfe7d8;
+  border-radius:18px;
+  padding:28px;
+  margin-top:48px;
+  scroll-margin-top:145px;
+}
+
+.article-products h2{
+  margin:7px 0 10px;
+}
+
+.article-products>p{
+  color:#566057;
+  line-height:1.6;
+}
+
+.affiliate-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin-top:22px;
+}
+
+.affiliate-box{
+  background:#fff;
+  border:1px solid #dfe5da;
+  border-radius:13px;
+  padding:22px;
+}
+
+.affiliate-box strong{
+  color:#225f30;
+  font-size:17px;
+}
+
+.affiliate-box p{
+  color:#5c665d;
+  line-height:1.5;
+  min-height:45px;
+}
+
+.affiliate-box .btn{
+  padding:11px 15px!important;
+  font-size:13px!important;
+}
+
+.affiliate-soon{
+  display:inline-block;
+  background:#eef2ea;
+  color:#687268;
+  padding:10px 15px;
+  border-radius:8px;
+  font-weight:700;
+  font-size:13px;
+}
+
+.article-summary{
+  margin-top:45px;
+  padding:25px 28px;
+  background:#f5f8f0;
+  border-radius:14px;
+  border:1px solid #e0e6da;
+}
+
+.article-summary h2{
+  margin:0 0 12px;
+}
+
+.article-summary p{
+  line-height:1.7;
+  color:#4e594f;
+  margin-bottom:0;
+}
+
+.article-disclaimer{
+  font-size:12px!important;
+  color:#7b847c!important;
+  border-top:1px solid #e4e8e1;
+  padding-top:20px;
+  margin-top:32px;
+}
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+  .article-layout{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .article-toc{
+    position:static;
+  }
+
+  .article-header h1{
+    font-size:40px;
+  }
+
+}
+
+
+/* TELEFON */
+
+@media(max-width:700px){
+
+  .article-page{
+    padding:24px 0 45px;
+  }
+
+  .breadcrumbs{
+    margin-bottom:22px;
+  }
+
+  .article-header{
+    margin-bottom:25px;
+  }
+
+  .article-header h1{
+    font-size:34px;
+  }
+
+  .article-lead{
+    font-size:17px;
+    line-height:1.55;
+  }
+
+  .article-toc{
+    padding:17px;
+  }
+
+  .article-content{
+    padding:24px 18px;
+    border-radius:14px;
+  }
+
+  .article-content>p{
+    font-size:15px;
+    line-height:1.65;
+  }
+
+  .article-content h2{
+    font-size:23px;
+    margin-top:36px;
+  }
+
+  .food-compare{
+    grid-template-columns:1fr;
+  }
+
+  .affiliate-grid{
+    grid-template-columns:1fr;
+  }
+
+  .article-products{
+    padding:21px 17px;
+  }
+
+  .article-summary{
+    padding:21px 18px;
+  }
+
+}
