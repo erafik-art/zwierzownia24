@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
 
 <header>
  <div class="wrap top">
@@ -29,15 +30,15 @@
   <div class="wrap nav-mobile-head">
    <span>MENU</span>
    <button class="menu-toggle" type="button"
-           aria-label="Otwórz menu"
+           aria-label="Otwórz menu" aria-controls="main-nav"
            aria-expanded="false">☰</button>
   </div>
 
   <nav class="wrap nav" id="main-nav">
    <a href="index.html">Strona główna</a>
-   <a href="index.html#psy-poradniki">Psy</a>
-   <a href="index.html#koty-poradniki">Koty</a>
-   <a href="index.html#poradniki">Poradniki</a>
+   <a href="poradniki.html#psy">Psy</a>
+   <a href="poradniki.html#koty">Koty</a>
+   <a href="poradniki.html">Poradniki</a>
    <a href="index.html#polecamy">Polecamy</a>
    <a href="index.html#produkty">Sklep</a>
    <a href="index.html#o-nas">O nas</a>
@@ -47,7 +48,7 @@
 </header>
 
 
-<main>
+<main id="main-content">
 
 <article class="article-page">
 
@@ -56,7 +57,7 @@
   <nav class="breadcrumbs" aria-label="Okruszki">
    <a href="index.html">Zwierzownia24</a>
    <span>›</span>
-   <a href="index.html#poradniki">Poradniki</a>
+   <a href="poradniki.html">Poradniki</a>
    <span>›</span>
    <span>Psy</span>
   </nav>
@@ -214,7 +215,7 @@
 
      <p>
       W tym miejscu będziemy umieszczać wybrane karmy i produkty
-      dostępne u naszych partnerów.
+      wybrane po weryfikacji dostępnych ofert.
      </p>
 
 
@@ -259,7 +260,8 @@
     </div>
 
 
-    <p class="article-disclaimer">
+    <section class="related-guides" aria-label="Powiązane poradniki"><h2>Czytaj także</h2><ul><li><a href="karma-sucha-czy-mokra-dla-psa.html">Karma sucha czy mokra dla psa? Jak wybrać</a></li><li><a href="wyprawka-dla-szczeniaka.html">Wyprawka dla szczeniaka — co kupić na początek?</a></li><li><a href="jakie-legowisko-dla-psa.html">Jakie legowisko dla psa? Rozmiar, kształt i pranie</a></li></ul><a href="poradniki.html">Wszystkie poradniki →</a></section>
+<p class="article-disclaimer">
      Materiał ma charakter informacyjny i nie zastępuje konsultacji
      z lekarzem weterynarii ani specjalistą zajmującym się żywieniem
      zwierząt.
@@ -290,7 +292,7 @@
 
   <div>
    <h4>ZWIERZOWNIA24</h4>
-   <a href="index.html#poradniki">Poradniki</a>
+   <a href="poradniki.html">Poradniki</a>
    <a href="index.html#polecamy">Polecamy</a>
    <a href="index.html#produkty">Sklep</a>
    <a href="index.html#o-nas">O nas</a>
@@ -298,8 +300,8 @@
 
   <div>
    <h4>ZWIERZĘTA</h4>
-   <a href="index.html#psy-poradniki">Psy</a>
-   <a href="index.html#koty-poradniki">Koty</a>
+   <a href="poradniki.html#psy">Psy</a>
+   <a href="poradniki.html#koty">Koty</a>
    <span>Inne zwierzęta – wkrótce</span>
   </div>
 
@@ -331,26 +333,7 @@
 </footer>
 
 
-<script>
-const menuToggle=document.querySelector('.menu-toggle');
-const mainNav=document.getElementById('main-nav');
-
-if(menuToggle&&mainNav){
- menuToggle.addEventListener('click',()=>{
-  const open=mainNav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded',String(open));
-  menuToggle.textContent=open?'✕':'☰';
- });
-
- mainNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-  if(window.innerWidth<=700){
-   mainNav.classList.remove('open');
-   menuToggle.setAttribute('aria-expanded','false');
-   menuToggle.textContent='☰';
-  }
- }));
-}
-</script>
+<script src="guide-nav.js" defer></script>
 
 </body>
 </html>

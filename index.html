@@ -11,10 +11,11 @@
 </head>
 
 <body>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
 
 <header>
  <div class="wrap top">
-   <a class="brand" href="#">
+   <a class="brand" href="index.html">
      <img src="logo.png" alt="Zwierzownia24">
    </a>
 
@@ -29,15 +30,15 @@
   <div class="wrap nav-mobile-head">
     <span>MENU</span>
     <button class="menu-toggle" type="button"
-      aria-label="Otwórz menu"
+      aria-label="Otwórz menu" aria-controls="main-nav"
       aria-expanded="false">☰</button>
   </div>
 
   <nav class="wrap nav" id="main-nav">
-    <a href="#">Strona główna</a>
-    <a href="#psy-poradniki">Psy</a>
-    <a href="#koty-poradniki">Koty</a>
-    <a href="#poradniki">Poradniki</a>
+    <a href="index.html">Strona główna</a>
+    <a href="poradniki.html#psy">Psy</a>
+    <a href="poradniki.html#koty">Koty</a>
+    <a href="poradniki.html">Poradniki</a>
     <a href="#polecamy">Polecamy</a>
     <a href="#produkty">Sklep</a>
     <a href="#o-nas">O nas</a>
@@ -48,7 +49,7 @@
 </header>
 
 
-<main>
+<main id="main-content">
 
 <!-- HERO -->
 
@@ -70,7 +71,7 @@
      psów i kotów. Wszystko w jednym miejscu.
    </p>
 
-   <a class="btn" href="#poradniki">
+   <a class="btn" href="poradniki.html">
      Zobacz poradniki →
    </a>
 
@@ -114,76 +115,7 @@
 
 <!-- PORADNIKI -->
 
-<section id="poradniki" class="wrap section">
-
- <div class="section-head">
-
-  <div>
-   <span class="eyebrow">WARTO WIEDZIEĆ</span>
-   <h2>Poradniki dla opiekunów zwierząt</h2>
-  </div>
-
- </div>
-
-
- <div class="guide-grid">
-
-  <article id="psy-poradniki" class="guide-card">
-
-   <div class="guide-icon">🐶</div>
-
-   <span class="eyebrow">PSY</span>
-
-   <h3>Jak wybrać dobrą karmę dla psa?</h3>
-
-   <p>
-    Na co zwracać uwagę przy wyborze karmy i jak dopasować ją
-    do wieku, wielkości oraz potrzeb psa.
-   </p>
-
-   <a href="jak-wybrac-karme-dla-psa.html">Czytaj więcej →</a>
-
-  </article>
-
-
-  <article id="koty-poradniki" class="guide-card">
-
-   <div class="guide-icon">🐱</div>
-
-   <span class="eyebrow">KOTY</span>
-
-   <h3>Co naprawdę jest potrzebne kotu?</h3>
-
-   <p>
-    Kuweta, drapak, karma, zabawki i bezpieczne miejsce do odpoczynku.
-    Od czego zacząć?
-   </p>
-
-   <a href="co-jest-potrzebne-kotu.html">Czytaj więcej →</a>
-
-  </article>
-
-
-  <article class="guide-card">
-
-   <div class="guide-icon">🐾</div>
-
-   <span class="eyebrow">PORADNIK</span>
-
-   <h3>Jak przygotować dom na nowego pupila?</h3>
-
-   <p>
-    Lista podstawowych rzeczy, które warto przygotować przed
-    pojawieniem się zwierzęcia w domu.
-   </p>
-
-   <a href="jak-przygotowac-dom-na-nowego-pupila.html">Czytaj więcej →</a>
-
-  </article>
-
- </div>
-
-</section>
+<section id="poradniki" class="wrap section"><div class="section-head"><div><span class="eyebrow">WARTO WIEDZIEĆ</span><h2>Poradniki dla opiekunów zwierząt</h2><p>Wybierz temat na początek lub przejdź do wszystkich 13 poradników.</p></div><a class="btn" href="poradniki.html">Wszystkie poradniki →</a></div><div class="guide-grid"><article class="guide-card"><span class="eyebrow">Psy</span><h3><a href="jak-wybrac-karme-dla-psa.html">Jak wybrać dobrą karmę dla psa?</a></h3><p>Wiek, potrzeby psa, czytanie etykiety i stopniowa zmiana karmy.</p><a href="jak-wybrac-karme-dla-psa.html" aria-label="Czytaj: Jak wybrać dobrą karmę dla psa?">Czytaj poradnik →</a></article><article class="guide-card"><span class="eyebrow">Koty</span><h3><a href="co-jest-potrzebne-kotu.html">Co naprawdę jest potrzebne kotu?</a></h3><p>Podstawowe wyposażenie: kuweta, drapak, miski, transporter i zabawki.</p><a href="co-jest-potrzebne-kotu.html" aria-label="Czytaj: Co naprawdę jest potrzebne kotu?">Czytaj poradnik →</a></article><article class="guide-card"><span class="eyebrow">Wyprawki i zakupy</span><h3><a href="jak-przygotowac-dom-na-nowego-pupila.html">Jak przygotować dom na nowego pupila?</a></h3><p>Bezpieczna przestrzeń, miejsce odpoczynku i organizacja pierwszych dni.</p><a href="jak-przygotowac-dom-na-nowego-pupila.html" aria-label="Czytaj: Jak przygotować dom na nowego pupila?">Czytaj poradnik →</a></article><article class="guide-card"><span class="eyebrow">Psy</span><h3><a href="karma-sucha-czy-mokra-dla-psa.html">Karma sucha czy mokra dla psa? Jak wybrać</a></h3><p>Sucha czy mokra karma dla psa? Porównaj porcje, koszt żywienia i przechowywanie. Sprawdź, jak rozsądnie łączyć oba rodzaje karmy i czytać etykiety.</p><a href="karma-sucha-czy-mokra-dla-psa.html" aria-label="Czytaj: Karma sucha czy mokra dla psa? Jak wybrać">Czytaj poradnik →</a></article><article class="guide-card"><span class="eyebrow">Koty</span><h3><a href="jaka-kuweta-dla-kota.html">Jaka kuweta dla kota — otwarta, zamknięta czy automatyczna?</a></h3><p>Porównaj kuwetę otwartą, zamkniętą i automatyczną. Sprawdź rozmiar, wejście, ustawienie i czyszczenie, zanim wybierzesz model dla swojego kota.</p><a href="jaka-kuweta-dla-kota.html" aria-label="Czytaj: Jaka kuweta dla kota — otwarta, zamknięta czy automatyczna?">Czytaj poradnik →</a></article><article class="guide-card"><span class="eyebrow">Podróże</span><h3><a href="podroz-z-psem-lub-kotem.html">Podróż samochodem z psem lub kotem — przygotowanie</a></h3><p>Przygotuj psa lub kota do jazdy autem: zabezpieczenie, oswajanie, woda, postoje i pakowanie. Sprawdź listę przed wyjazdem oraz najczęstsze błędy.</p><a href="podroz-z-psem-lub-kotem.html" aria-label="Czytaj: Podróż samochodem z psem lub kotem — przygotowanie">Czytaj poradnik →</a></article></div></section>
 
 
 <!-- POLECAMY -->
@@ -247,7 +179,7 @@
 
   </div>
 
-  <input id="search"
+  <input id="search" aria-label="Szukaj produktu w katalogu"
          type="search"
          placeholder="Szukaj produktu…">
 
@@ -403,7 +335,7 @@
 
    <h4>ZWIERZOWNIA24</h4>
 
-   <a href="#poradniki">Poradniki</a>
+   <a href="poradniki.html">Poradniki</a>
 
    <a href="#polecamy">Polecamy</a>
 
@@ -418,9 +350,9 @@
 
    <h4>ZWIERZĘTA</h4>
 
-   <a href="#psy-poradniki">Psy</a>
+   <a href="poradniki.html#psy">Psy</a>
 
-   <a href="#koty-poradniki">Koty</a>
+   <a href="poradniki.html#koty">Koty</a>
 
    <span>Inne zwierzęta – wkrótce</span>
 

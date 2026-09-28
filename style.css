@@ -732,3 +732,33 @@ footer{background:linear-gradient(90deg,#0a3a1a,#155628);padding-top:48px}.foot{
     padding-top:70px;
   }
 }
+
+/* Poradniki: rozszerzenie istniejącego stylu, 2026-09 */
+.article-header{position:static;box-shadow:none;background:transparent;padding:0}
+.article-page{padding-top:42px}
+.article-content section>p,.article-content li,.article-content details p{font-size:16px;line-height:1.75;color:#465047}
+.article-content a{color:#235b31;text-underline-offset:3px}
+.article-content h3{font-size:19px;line-height:1.35;color:#194d28}
+.article-content section,.guide-category{scroll-margin-top:145px}
+.guide-table-wrap{max-width:100%;overflow-x:auto;margin:24px 0;border:1px solid #dfe7da;border-radius:12px}
+.guide-table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.6}
+.guide-table caption{text-align:left;font-weight:700;padding:14px;background:#f4f8ef;color:#194d28}
+.guide-table th,.guide-table td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #dfe7da;overflow-wrap:anywhere}
+.guide-table thead{background:#fff8e8}.guide-table tbody th{font-weight:700}
+.article-content details{padding:16px 0;border-bottom:1px solid #dfe7da}
+.article-content summary{cursor:pointer;font-weight:700;line-height:1.5;color:#194d28}
+.related-guides{margin-top:36px;padding:22px;background:#f4f8ef;border-radius:12px}
+.article-content .related-guides h2{margin-top:0}.related-guides li{margin:10px 0}
+.guide-sources{margin-top:35px}.guide-sources p,.guide-sources li{font-size:13px!important}
+.guide-hub-intro h1{font-size:clamp(32px,4vw,46px);line-height:1.12;color:#173f24;max-width:850px;margin:14px 0}
+.guide-hub-intro>p{max-width:800px;line-height:1.7;color:#4f5b50}
+.guide-hub-note{font-size:13px}.guide-categories{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.guide-categories a{padding:12px 18px;border-radius:999px;background:#f4f8ef;border:1px solid #cbd6c8;color:#235b31;text-decoration:none;font-weight:700}
+.guide-category{border-top:1px solid #e3e8df}.guide-card h3 a{margin:0;line-height:1.3}
+.guide-card{display:flex;flex-direction:column}.guide-card>p{flex:1}
+.affiliate-box h3{margin-top:0}.article-content,.article-layout>*{min-width:0}
+.footer-grid>div{display:flex;flex-direction:column;gap:10px}.footer-grid a,.footer-grid span{color:#d8e1d9;text-decoration:none}.footer-brand p{color:#cbd8cd;line-height:1.6}.footer-brand img{max-width:100%;width:250px}.copyright{color:#cbd8cd;margin-top:30px;font-size:13px}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #ad7600;outline-offset:4px}
+.skip-link{position:fixed;top:8px;left:8px;z-index:100;background:white;color:#194d28;padding:12px;transform:translateY(-150%)}.skip-link:focus{transform:none}
+@media(max-width:700px){.article-page{padding-top:28px}.guide-table th,.guide-table td{padding:9px;font-size:13px}.article-content section>p,.article-content li{font-size:15px}.guide-categories a{flex:1 1 auto;text-align:center}.article-header h1{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.guide-card,.card{transition:none}}
