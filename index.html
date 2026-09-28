@@ -1,111 +1,466 @@
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zwierzownia24 – wszystko dla Twojego pupila</title>
-<meta name="description" content="Zwierzownia24 – katalog produktów zoologicznych. Produkty dla psów i kotów, sprzedaż przez marketplace.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Zwierzownia24 – poradniki, produkty i świat zwierząt</title>
+<meta name="description" content="Zwierzownia24 – praktyczne poradniki dla opiekunów psów i kotów, polecane produkty zoologiczne oraz katalog produktów dla zwierząt.">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
  <div class="wrap top">
-   <a class="brand" href="#"><img src="logo.png" alt="Zwierzownia24"></a>
-   <div class="head-contact"><span>✉ zwierzownia24@op.pl</span><span>Sprzedaż online • Polska</span></div>
+   <a class="brand" href="#">
+     <img src="logo.png" alt="Zwierzownia24">
+   </a>
+
+   <div class="head-contact">
+     <span>✉ zwierzownia24@op.pl</span>
+     <span>Poradniki • Produkty • Zwierzęta</span>
+   </div>
  </div>
+
  <div class="navline">
-  <div class="wrap nav-mobile-head"><span>MENU</span><button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false">☰</button></div>
-  <div class="wrap nav" id="main-nav">
-   <a href="#">Strona główna</a><a href="#produkty">Produkty</a><a href="#psy">Psy</a><a href="#koty">Koty</a><a href="#o-nas">O nas</a><a href="#kontakt-dane">Kontakt</a>
+
+  <div class="wrap nav-mobile-head">
+    <span>MENU</span>
+    <button class="menu-toggle" type="button"
+      aria-label="Otwórz menu"
+      aria-expanded="false">☰</button>
   </div>
+
+  <nav class="wrap nav" id="main-nav">
+    <a href="#">Strona główna</a>
+    <a href="#psy-poradniki">Psy</a>
+    <a href="#koty-poradniki">Koty</a>
+    <a href="#poradniki">Poradniki</a>
+    <a href="#polecamy">Polecamy</a>
+    <a href="#produkty">Sklep</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#kontakt-dane">Kontakt</a>
+  </nav>
+
  </div>
 </header>
 
+
 <main>
+
+<!-- HERO -->
+
 <section class="hero storefront-hero">
+
  <div class="wrap hero-inner">
+
   <div>
+
    <span class="eyebrow">ZWIERZOWNIA24</span>
-   <h1>Wszystko dla Twojego pupila <em>w jednym miejscu!</em></h1>
-   <p>Produkty dla psów i kotów od sprawdzonych dostawców. Wygodne zakupy realizowane przez marketplace.</p>
-   <a class="btn" href="#produkty">Zobacz produkty →</a>
+
+   <h1>
+     Lepsze życie
+     <em>Twojego pupila</em>
+   </h1>
+
+   <p>
+     Praktyczne poradniki, pomysły i polecane produkty dla opiekunów
+     psów i kotów. Wszystko w jednym miejscu.
+   </p>
+
+   <a class="btn" href="#poradniki">
+     Zobacz poradniki →
+   </a>
+
   </div>
-  <div class="hero-card">
-   <div class="paw">🐾</div><strong>Dla miłości do zwierząt</strong>
-   <span>Praktyczny katalog, wygodne wyszukiwanie i stale rozwijana oferta.</span>
-  </div>
+
  </div>
+
 </section>
 
-<section class="benefits"><div class="wrap benefits-grid">
- <div><b>🚚 Wygodne zakupy</b><span>sprzedaż przez marketplace</span></div>
- <div><b>✓ Sprawdzeni dostawcy</b><span>starannie dobrany asortyment</span></div>
- <div><b>♥ Dla miłości do zwierząt</b><span>bo pupil zasługuje na dobre produkty</span></div>
- <div><b>🐾 316 produktów</b><span>w aktualnym katalogu</span></div>
-</div></section>
 
-<section id="produkty" class="wrap section">
- <div class="section-head"><div><span class="eyebrow">KATALOG</span><h2>Znajdź coś dla swojego pupila</h2></div>
- <input id="search" type="search" placeholder="Szukaj produktu…"></div>
- <div class="filters"><button class="filter active" data-cat="Wszystkie">Wszystkie</button><button id="psy" class="filter" data-cat="Psy">🐶 Psy</button><button id="koty" class="filter" data-cat="Koty">🐱 Koty</button></div>
- <div id="count" class="count"></div><div id="grid" class="grid"></div><button id="more" class="more">Pokaż więcej</button>
+<!-- CZTERY GŁÓWNE OBSZARY -->
+
+<section class="benefits">
+
+ <div class="wrap benefits-grid">
+
+  <div>
+   <b>🐶 Psy</b>
+   <span>żywienie, zdrowie, pielęgnacja i akcesoria</span>
+  </div>
+
+  <div>
+   <b>🐱 Koty</b>
+   <span>opieka, żywienie i codzienne potrzeby</span>
+  </div>
+
+  <div>
+   <b>📖 Poradniki</b>
+   <span>praktyczna wiedza dla opiekunów</span>
+  </div>
+
+  <div>
+   <b>⭐ Polecamy</b>
+   <span>produkty warte uwagi</span>
+  </div>
+
+ </div>
+
 </section>
 
-<section id="o-nas" class="about"><div class="wrap about-grid">
- <div><span class="eyebrow">O NAS</span><h2>Zwierzownia24 – z myślą o zwierzętach</h2>
- <p>Zwierzownia24 to rozwijany katalog artykułów zoologicznych. Zależy nam na prostym dostępie do produktów dla psów i kotów bez przeładowanego procesu zakupowego.</p>
- <p>Ofertę rozwijamy stopniowo. Kolejne kategorie będą pojawiały się wraz z rozszerzaniem asortymentu i współpracy z dostawcami.</p></div>
- <div class="about-box"><strong>316+</strong><span>produktów w katalogu</span><strong>2</strong><span>główne kategorie na start</span><strong>24/7</strong><span>dostęp do katalogu online</span></div>
-</div></section>
 
+<!-- PORADNIKI -->
+
+<section id="poradniki" class="wrap section">
+
+ <div class="section-head">
+
+  <div>
+   <span class="eyebrow">WARTO WIEDZIEĆ</span>
+   <h2>Poradniki dla opiekunów zwierząt</h2>
+  </div>
+
+ </div>
+
+
+ <div class="guide-grid">
+
+  <article id="psy-poradniki" class="guide-card">
+
+   <div class="guide-icon">🐶</div>
+
+   <span class="eyebrow">PSY</span>
+
+   <h3>Jak wybrać dobrą karmę dla psa?</h3>
+
+   <p>
+    Na co zwracać uwagę przy wyborze karmy i jak dopasować ją
+    do wieku, wielkości oraz potrzeb psa.
+   </p>
+
+   <a href="#produkty">Czytaj więcej →</a>
+
+  </article>
+
+
+  <article id="koty-poradniki" class="guide-card">
+
+   <div class="guide-icon">🐱</div>
+
+   <span class="eyebrow">KOTY</span>
+
+   <h3>Co naprawdę jest potrzebne kotu?</h3>
+
+   <p>
+    Kuweta, drapak, karma, zabawki i bezpieczne miejsce do odpoczynku.
+    Od czego zacząć?
+   </p>
+
+   <a href="#produkty">Czytaj więcej →</a>
+
+  </article>
+
+
+  <article class="guide-card">
+
+   <div class="guide-icon">🐾</div>
+
+   <span class="eyebrow">PORADNIK</span>
+
+   <h3>Jak przygotować dom na nowego pupila?</h3>
+
+   <p>
+    Lista podstawowych rzeczy, które warto przygotować przed
+    pojawieniem się zwierzęcia w domu.
+   </p>
+
+   <a href="#produkty">Czytaj więcej →</a>
+
+  </article>
+
+ </div>
+
+</section>
+
+
+<!-- POLECAMY -->
+
+<section id="polecamy" class="recommend">
+
+ <div class="wrap">
+
+  <span class="eyebrow">ZWIERZOWNIA24 POLECA</span>
+
+  <h2>Produkty warte uwagi</h2>
+
+  <p class="recommend-intro">
+   Tutaj będziemy publikować nasze zestawienia, porównania oraz
+   polecane produkty dla psów i kotów.
+  </p>
+
+
+  <div class="recommend-grid">
+
+   <div class="recommend-card">
+    <strong>🥩 Karma i przysmaki</strong>
+    <span>Produkty dopasowane do różnych potrzeb zwierząt.</span>
+   </div>
+
+   <div class="recommend-card">
+    <strong>🦮 Spacery</strong>
+    <span>Smycze, szelki i akcesoria przydatne poza domem.</span>
+   </div>
+
+   <div class="recommend-card">
+    <strong>🧸 Zabawa</strong>
+    <span>Zabawki pomagające zapewnić pupilowi aktywność.</span>
+   </div>
+
+   <div class="recommend-card">
+    <strong>🏠 Dom i odpoczynek</strong>
+    <span>Legowiska, drapaki i wyposażenie dla zwierząt.</span>
+   </div>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- SKLEP / DOTYCHCZASOWY KATALOG -->
+
+<section id="produkty" class="wrap section shop-section">
+
+ <div class="section-head">
+
+  <div>
+   <span class="eyebrow">SKLEP</span>
+   <h2>Produkty dla Twojego pupila</h2>
+
+   <p class="shop-intro">
+    Przeglądaj nasz katalog produktów dla psów i kotów.
+   </p>
+
+  </div>
+
+  <input id="search"
+         type="search"
+         placeholder="Szukaj produktu…">
+
+ </div>
+
+
+ <div class="filters">
+
+  <button class="filter active"
+          data-cat="Wszystkie">
+    Wszystkie
+  </button>
+
+  <button id="psy"
+          class="filter"
+          data-cat="Psy">
+    🐶 Psy
+  </button>
+
+  <button id="koty"
+          class="filter"
+          data-cat="Koty">
+    🐱 Koty
+  </button>
+
+ </div>
+
+
+ <div id="count" class="count"></div>
+
+ <div id="grid" class="grid"></div>
+
+ <button id="more" class="more">
+  Pokaż więcej
+ </button>
+
+</section>
+
+
+<!-- O NAS -->
+
+<section id="o-nas" class="about">
+
+ <div class="wrap about-grid">
+
+  <div>
+
+   <span class="eyebrow">O NAS</span>
+
+   <h2>
+    Zwierzownia24 – dla ludzi, którzy kochają zwierzęta
+   </h2>
+
+   <p>
+    Zwierzownia24 to miejsce tworzone dla opiekunów zwierząt.
+    Łączymy praktyczne poradniki, informacje i produkty,
+    które mogą ułatwić codzienną opiekę nad pupilem.
+   </p>
+
+   <p>
+    Zaczynamy od psów i kotów, a wraz z rozwojem strony
+    będziemy rozszerzać ją o kolejne gatunki zwierząt,
+    poradniki i rekomendacje.
+   </p>
+
+  </div>
+
+
+  <div class="about-box">
+
+   <strong>316+</strong>
+   <span>produktów w katalogu</span>
+
+   <strong>2</strong>
+   <span>główne kategorie na start</span>
+
+   <strong>1</strong>
+   <span>miejsce dla miłośników zwierząt</span>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- KONTAKT -->
 
 <section id="kontakt-dane" class="contact">
+
  <div class="wrap contact-grid">
-  <div><span class="eyebrow light">KONTAKT</span><h2>Masz pytanie?</h2>
-   <p>Skontaktuj się ze Zwierzownia24.</p>
+
+  <div>
+
+   <span class="eyebrow light">KONTAKT</span>
+
+   <h2>Masz pytanie?</h2>
+
+   <p>
+    Skontaktuj się ze Zwierzownia24.
+   </p>
+
   </div>
+
+
   <div class="contact-card">
-   <b>✉ E-mail</b><a href="mailto:zwierzownia24@op.pl">zwierzownia24@op.pl</a>
-   <b>☎ Telefon</b><a href="tel:+48883664990">+48 883 664 990</a>
-   <b>🕘 Godziny kontaktu</b><span>pon. – nd. / 8:00 – 18:00</span>
-   <b>📍 Adres</b><span>ul. Rzgowska 52/26, 93-172 Łódź</span>
+
+   <b>✉ E-mail</b>
+   <a href="mailto:zwierzownia24@op.pl">
+    zwierzownia24@op.pl
+   </a>
+
+   <b>☎ Telefon</b>
+   <a href="tel:+48883664990">
+    +48 883 664 990
+   </a>
+
+   <b>🕘 Godziny kontaktu</b>
+   <span>pon. – nd. / 8:00 – 18:00</span>
+
+   <b>📍 Adres</b>
+   <span>
+    ul. Rzgowska 52/26, 93-172 Łódź
+   </span>
+
   </div>
+
  </div>
+
 </section>
 
 </main>
 
 
 <footer id="kontakt">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <img src="logo.png" alt="Zwierzownia24">
-      <p>Zwierzownia24 – sklep zoologiczny online.<br>
-      Produkty dla psów, kotów i innych zwierząt.<br>
-      Sprzedaż realizujemy przez marketplace.</p>
-    </div>
-    <div>
-      <h4>O NAS</h4>
-      <a href="#kontakt-dane">Kontakt</a>
-      <a href="#o-nas">O firmie</a>
-      <a href="#produkty" data-footer-cat="Psy">Psy</a>
-      <a href="#produkty" data-footer-cat="Koty">Koty</a>
-    </div>
-    <div>
-      <h4>OBSŁUGA KLIENTA</h4>
-      <span>Sprzedaż przez marketplace</span>
-      <span>Dostawa zgodnie z ofertą marketplace</span>
-      <span>Zwroty i reklamacje zgodnie z miejscem zakupu</span>
-    </div>
-    <div class="footer-contact">
-      <h4>KONTAKT</h4>
-      <span>📍 ul. Rzgowska 52/26<br>93-172 Łódź</span>
-      <a href="tel:+48883664990">☎ +48 883 664 990</a>
-      <span>pon. – nd. / 8:00 – 18:00</span>
-      <a href="mailto:zwierzownia24@op.pl">✉ zwierzownia24@op.pl</a>
-    </div>
+
+ <div class="wrap footer-grid">
+
+  <div class="footer-brand">
+
+   <img src="logo.png"
+        alt="Zwierzownia24">
+
+   <p>
+    Zwierzownia24 – poradniki, inspiracje
+    i produkty dla zwierząt.
+   </p>
+
   </div>
-  <div class="wrap copyright">© 2026 Zwierzownia24. Wszelkie prawa zastrzeżone.</div>
+
+
+  <div>
+
+   <h4>ZWIERZOWNIA24</h4>
+
+   <a href="#poradniki">Poradniki</a>
+
+   <a href="#polecamy">Polecamy</a>
+
+   <a href="#produkty">Sklep</a>
+
+   <a href="#o-nas">O nas</a>
+
+  </div>
+
+
+  <div>
+
+   <h4>ZWIERZĘTA</h4>
+
+   <a href="#psy-poradniki">Psy</a>
+
+   <a href="#koty-poradniki">Koty</a>
+
+   <span>Inne zwierzęta – wkrótce</span>
+
+  </div>
+
+
+  <div class="footer-contact">
+
+   <h4>KONTAKT</h4>
+
+   <span>
+    📍 ul. Rzgowska 52/26<br>
+    93-172 Łódź
+   </span>
+
+   <a href="tel:+48883664990">
+    ☎ +48 883 664 990
+   </a>
+
+   <span>
+    pon. – nd. / 8:00 – 18:00
+   </span>
+
+   <a href="mailto:zwierzownia24@op.pl">
+    ✉ zwierzownia24@op.pl
+   </a>
+
+  </div>
+
+ </div>
+
+
+ <div class="wrap copyright">
+  © 2026 Zwierzownia24. Wszelkie prawa zastrzeżone.
+ </div>
+
 </footer>
 
+
 <script src="app.js"></script>
-</body></html>
+
+</body>
+</html>
