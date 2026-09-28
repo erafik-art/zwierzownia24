@@ -198,3 +198,192 @@ footer{background:linear-gradient(90deg,#0a3a1a,#155628);padding-top:48px}.foot{
  .benefits-grid{grid-template-columns:1fr!important}
  .benefits-grid div{border-right:0!important}
 }
+/* =========================================
+   ZWIERZOWNIA24 – PORTAL / AFILIACJA
+   ========================================= */
+
+/* PORADNIKI */
+
+.guide-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  margin-top:28px;
+}
+
+.guide-card{
+  background:#fff;
+  border:1px solid #e0e7dc;
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 8px 24px rgba(35,69,37,.09);
+  transition:.2s;
+  scroll-margin-top:145px;
+}
+
+.guide-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 32px rgba(35,69,37,.15);
+}
+
+.guide-icon{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.guide-card h3{
+  font-size:22px;
+  line-height:1.25;
+  color:#194d28;
+  margin:10px 0 13px;
+}
+
+.guide-card p{
+  color:#566057;
+  line-height:1.6;
+  font-size:15px;
+}
+
+.guide-card a{
+  display:inline-block;
+  margin-top:8px;
+  color:#286837;
+  text-decoration:none;
+  font-weight:800;
+}
+
+
+/* POLECAMY */
+
+.recommend{
+  background:
+    radial-gradient(circle at 90% 15%,rgba(87,128,65,.10),transparent 25%),
+    linear-gradient(110deg,#fff8e8,#f2f7eb);
+  padding:58px 0;
+  border-top:1px solid #e7eadf;
+  border-bottom:1px solid #e7eadf;
+  scroll-margin-top:125px;
+}
+
+.recommend h2{
+  font-size:32px;
+  margin:8px 0 10px;
+}
+
+.recommend-intro{
+  max-width:700px;
+  color:#566057;
+  line-height:1.6;
+  margin-bottom:28px;
+}
+
+.recommend-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.recommend-card{
+  background:#fff;
+  border:1px solid #dfe7da;
+  border-radius:15px;
+  padding:22px;
+  min-height:130px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  box-shadow:0 6px 18px rgba(35,69,37,.07);
+}
+
+.recommend-card strong{
+  color:#225f30;
+  font-size:17px;
+}
+
+.recommend-card span{
+  color:#626c62;
+  font-size:14px;
+  line-height:1.5;
+}
+
+
+/* SKLEP JAKO DRUGA CZĘŚĆ SERWISU */
+
+.shop-section{
+  scroll-margin-top:125px;
+}
+
+.shop-intro{
+  margin:0;
+  color:#657066;
+  font-size:15px;
+}
+
+
+/* LEKKIE WYRÓŻNIENIE PORTALU */
+
+#poradniki{
+  scroll-margin-top:125px;
+}
+
+#o-nas{
+  scroll-margin-top:125px;
+}
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+  .guide-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .recommend-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+
+/* TELEFON */
+
+@media(max-width:700px){
+
+  .guide-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+    margin-top:20px;
+  }
+
+  .guide-card{
+    padding:21px;
+  }
+
+  .guide-card h3{
+    font-size:19px;
+  }
+
+  .guide-icon{
+    font-size:36px;
+  }
+
+  .recommend{
+    padding:40px 0;
+  }
+
+  .recommend h2{
+    font-size:29px;
+  }
+
+  .recommend-grid{
+    grid-template-columns:1fr;
+    gap:11px;
+  }
+
+  .recommend-card{
+    min-height:0;
+    padding:18px;
+  }
+
+}
