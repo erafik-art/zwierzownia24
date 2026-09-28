@@ -716,3 +716,19 @@ footer{background:linear-gradient(90deg,#0a3a1a,#155628);padding-top:48px}.foot{
   }
 
 }
+/* POPRAWKA ARTYKUŁU POD PRZYKLEJANY NAGŁÓWEK */
+.article-page{
+  padding-top:120px;
+}
+
+.article-header,
+.breadcrumbs{
+  position:relative;
+  z-index:1;
+}
+
+@media(max-width:700px){
+  .article-page{
+    padding-top:70px;
+  }
+}
